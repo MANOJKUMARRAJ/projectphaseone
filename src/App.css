@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p{
+  color: red;
+}
+.wholeproducts{
+  border: 1px solid black;
+  width:30%;
+  
+}
+.firstbox{
+  display: flex;
+  width: 100%;
+}
+.brandb{
+  padding-left: 300px;
+}
+.productcss{
+  border: 1px solid black;
+  width:360px;
+  
+}
+#box{
+  color: red;
+}
+#emailid{
+  padding-top: 150px;
+}
+.sgjv{
+  width: 100%;
+  display:flex;
+}
+.leftdiv{
+  width:52%;
+
+  height:956px;
+}
+.rightdiv{
+  width:42%;
+  display: flex;
+
+  height:956px;
+}
+.lastdiv{
+  width:4%;
+}
+.firstup{
+  display: flex;
+  height:470px;
+
+}
+.secondup{
+  display: flex;
+  height:470px;
+
+}
+.yummy{
+  padding-left: 15px;
+  padding-top: 13px;
+}
+.checked {
+  color: orange;
+}
+.topdiv{
+
+  width:860px;
+  height:953px;
+
+}
+h4{
+  color: green;
+}
+.dot {
+  height: 30px;
+  
+  padding:1% 0;
+  width: 35px;
+  border:1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+span{
+  text-align: center;
+}
+#addbut{
+  background-color:green;
+}
+#subbut{
+  background-color: red;
+  margin-left: 30px;
+}
+#res{
+  margin-left: 20px;
+}
+#log{
+  margin-top: 40%;
+}
+#firstlogin{
+  margin-top: 300px;
+  text-align: center;
+  
+}
+.boxx1{
+  padding-left: 840px;
+}
+#firstbtn{
+  margin-left: 890px;
+}
+#errr{
+  padding-left: 840px;
+}
+.loo{
+  margin-top: 10px;
+  display: grid;
+  
+}
+#place{
+  float: right;
+
+}
+#logg{
+  float: right;
+}
+.grmn{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 40px;
+}
+.allpro{
+  width:460px;
+  border: solid 1px black;
+  height: 400px;
+  margin-left: 150px;
+  margin-bottom: 30px;
+}
+.bot{
+  text-align: center;
+  margin-left: 130px;
+  background-color: cadetblue;
+  color: red;
+}
+.mainlogin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./bnackground1.jpg');
+}
+.logg{
+  background-color: red;
+  color: black;
+  margin-top: 15px;
+  margin-left: 15px;
+}
