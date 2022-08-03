@@ -1,0 +1,20 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom'
+import '../App.css'
+const Logincart=()=>{
+    let history = useNavigate();
+    function logpage(){
+        history("/")
+    }
+    let headclo={
+        color:'green',
+        textalign:"center",
+        alignitems:'center'
+    }
+    return (
+        <>
+        <h1 style={headclo}>hello</h1>
+        <h4 className='looo'>No Products in the cart please Login   <button onClick={logpage} className='lobtn'>Loginpage </button>and order products Avail 20%off on all products </h4></>
+    )
+}
+export default Logincart

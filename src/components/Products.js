@@ -1,15 +1,62 @@
 import React, { useState } from 'react'
 import productsData from './products.json'
+import Backtotopbutton from './Backtotopbutton'
+import ReactPaginate from 'react-paginate'
+
 import { useNavigate, Link } from 'react-router-dom'
-import Productsdespage from './ProductDetail'
+import Navbartop from './Navbartop'
+
 import '../App.css'
-function Products() {
+const Products = ({onAdd,cart,removcart}) =>  {
     let history = useNavigate();
     function logoutto() {
         history("/")
     }
+   
     // console.log(productsData);
     let [data, setData] = useState(productsData.products);
+    const [pageNumber,setPageNumber]=useState(0)
+
+    const productsPerPage=20
+    const pagesVisited=pageNumber*productsPerPage
+    const displayProducts=data.slice(pagesVisited,pagesVisited+productsPerPage)
+                              .map((product)=>{
+                                return(
+                                    <div className='allpro' key={product.id}>
+                                    <Link to={`/products/${product.id}`}>
+                                        <img src={product.thumbnail} width="460px" height="180px" alt='product is here' />
+                                    </Link>
+                                    <h3>{product.title}</h3>
+                                    <h3 className='b'>{product.brand}</h3>
+                                    <h3>Price: Rs-{product.price} &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Discount % ={product.discountPercentage}</h3>
+                                    <p className='blink'>Products Left in stock : {product.stock}</p>
+                                    <h3 className='b'>Rating: {product.rating}</h3>
+                                    <Link to={`/products/${product.id}`}><button className='bot' >View Details of Product</button></Link>
+                                    {/* <button className='bott' key={product.id}   onClick={()=>handleClick(product)}>Add to cart</button> */}
+                                    <button type='button' onClick={(e)=>{
+                                    e.preventDefault()
+                                    onAdd(product)}}>Add to Cart</button>
+                                </div>
+                                    
+
+                                )
+                              })
+    
+
+    // const [value,setValue]=useState('')
+    // const onChange=(event)=>{
+    //     setValue(event.tartget.value)
+        
+    // }
+    // const onSearch=(searchTerm)=>{
+    //     console.log('search',searchTerm)
+    // }
+
+    const pageCount=Math.ceil(data.length / productsPerPage);
+    const changePage=({selected})=>{
+        setPageNumber(selected)
+    }
+
 
 
     const handlePrice = () => {
@@ -32,13 +79,43 @@ function Products() {
         const sortedData = [...data.sort((e, f) => f.discountPercentage - e.discountPercentage)];
         setData(sortedData);
     }
-    
-    
+    const handleStock = () => {
+        const sortedData = [...data.sort((q, r) => q.stock - r.stock)];
+        setData(sortedData);
+    }
+    const allpro= () => {
+        const sortedData = [...data.sort((y, z) => y.id - z.id)];
+        setData(sortedData);
+    }
+    const searchproducts=(e)=>{
+        setData(data.filter((a)=>a.title.startsWith(e.target.value)))
+    }
+    // const handleClick=(product)=>{
+      
+    //     setCart([...cart,product])
+    //     console.log(cart)
+
+        
+  
+        
+    //     // alert('added to cart')
+     
+
+    // }
+      
 
 
     return (
-        <>
-            <h1>Products Page</h1>
+        <div className='mama'>
+            <Navbartop onAdd={onAdd} cart={cart}/>
+        
+            {/* <h1>Products Page</h1> */}
+            {/* <div>
+                <label>Search  : </label>
+                <input className='searchh' type='text' placeholder='search here by title name ....'  value={value} onChange={onChange} ></input>
+                <button onClick={()=>onSearch(value)}>Search</button>
+            </div> */}
+            <input type='text' onKeyUp={searchproducts} placeholder='search here for products with title name....' />
             
             <button onClick={handlePrice}>Sort by price Low to High</button>
             
@@ -49,32 +126,42 @@ function Products() {
             <button onClick={handleRating}>Sort by Less Rating</button>
             </div>
             <button onClick={handleDiscount}>Sort by more Discount</button>
+            <button onClick={handleStock}>Sort by stock</button>
+            
+            <div><button onClick={allpro} className='l'>All Products</button></div>
             <div><button onClick={logoutto} className='logg'>Logout</button></div>
+            {/* <div><h1>{cart.index}</h1></div>
+            <div className='herecart'>
+                <span>
+                    <i className='fas fa-cart-plus'></i>
+                </span>
+                <span>{cart.length}</span>
+            </div> */}
 
 
             <div className='grmn'>
-                {data.map(product => {
-                    return (
-                        <div className='allpro' key={product.id}>
-                            <Link to={`/products/${product.id}`}>
-                                <img src={product.thumbnail} width="460px" height="180px" alt='product image is here' />
-                            </Link>
-                            <h3>{product.title}</h3>
-                            <h3 className='b'>{product.brand}</h3>
-                            <h3>Price: Rs-{product.price} &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;Discount % ={product.discountPercentage}</h3>
-                            <h3 className='b'>Rating: {product.rating}</h3>
-                            <Link to={`/products/${product.id}`}><button className='bot' >View Details of Product</button></Link>
-                        </div>
-                    )
-                }
-                )}
+                {displayProducts}
+               <div className='pagee'>
+               <ReactPaginate 
+                previousLabel={'Previous'}
+                nextLabel={'Next'}
+                pageCount={pageCount}
+                onPageChange={changePage}
+                containerClassName={'paginationBttns'}
+                previousLinkClassName={'previousBttn'}
+                nextLinkClassName={'nextBttn'}
+                disabledClassName={'paginationDisabled'}
+                activeClassName={'paginationActive'}
+                />
+               </div>
             </div>
+            <Backtotopbutton />
 
 
 
 
 
-        </>
+        </div>
     )
 }
 

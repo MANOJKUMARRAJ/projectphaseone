@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import '../App.css'
 
 
-function Loginpage({cart}) {
+function Loginpage() {
     const initialValues={email:"",password:""}
     const [formpageValues,setFormpageValues]=useState(initialValues);
     const [formpageErrors,setFormpageErrors]=useState({});
@@ -17,12 +17,6 @@ function Loginpage({cart}) {
     function nextpage(){
         history("/products")
     }
-    function lopp(){
-      history("/")
-  }
-  function nodatapa(){
-    history("/logincart")
-}
     const handleChange=(e)=>{
       const {name,value}=e.target;
       setFormpageValues({ ...formpageValues,[name]:value});
@@ -38,7 +32,7 @@ function Loginpage({cart}) {
     useEffect(()=>{
       console.log(formpageErrors);
       if (Object.keys(formpageErrors).length === 0 && isSubmit){
-        // console.log(formpageErrors)
+        console.log(formpageErrors)
       }
     })
     const validate=(values)=>{
@@ -58,12 +52,13 @@ function Loginpage({cart}) {
     }
   return (
     <div className='mainlogin'>
-    <div className='firslo'>
-    <div className='fur' onClick={lopp} >
-                    <a >Products </a>
+    {/* <Lognavbar /> */}
+    <div className='toppp'>
+                <div className='firstt' >
+                    <a>Products </a>
                 </div>
-                <div className='sec'>
-                    <div className='herecar' onClick={nodatapa}>
+                <div className='secondd'>
+                    <div className='herecartt'>
                         <span>
                             <i className='fas fa-cart-plus'></i>
                         </span>
@@ -71,9 +66,7 @@ function Loginpage({cart}) {
 
                     </div>
                 </div>
-    </div>
-    <div className='secondlo'>
-    <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
         
         <div><h1 className='hlo'>Login Page</h1></div>
           <div className='onew'>
@@ -81,17 +74,17 @@ function Loginpage({cart}) {
           <input type='email' name='email' placeholder='please enter your email' value={formpageValues.email} onChange={handleChange}/>
           
           </div>
-          <p  className='erp'>{formpageErrors.email}</p>
-          <div className='onew'>
+          <p >{formpageErrors.email}</p>
+          <div>
           <label>Password</label>
           <input type='password' name='password' placeholder='password here' value={formpageValues.password} onChange={handleChange}/>
           </div>
-          <p className='erp' >{formpageErrors.password}</p>
-          <button className='bter'>Login</button>
+          <p >{formpageErrors.password}</p>
+          <button >Login</button>
         
       </form>
-    </div>
- 
+            </div>
+     
       
     </div>
   )
