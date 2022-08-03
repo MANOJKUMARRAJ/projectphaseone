@@ -1,40 +1,16 @@
 
 
 
-![Screenshot (8)](https://user-images.githubusercontent.com/109128770/179940094-74d4aba9-547d-408f-9a14-7676b367afdf.png)
+# Getting Started with Create React App![Screenshot (4)](https://user-images.githubusercontent.com/109128770/182590368-5de5537e-4b4b-4734-b204-d1c878b5c155.png)
+![Screenshot (5)](https://user-images.githubusercontent.com/109128770/182590379-7da823e5-a520-4531-9cee-1bb7f7400964.png)
+![Screenshot (6)](https://user-images.githubusercontent.com/109128770/182590383-fd47417a-85ff-4f43-8183-cef58f64dd1f.png)
+![Screenshot (7)](https://user-images.githubusercontent.com/109128770/182590386-533bfbdb-d14b-4c74-9e82-ee27aa225473.png)
+![Screenshot (8)](https://user-images.githubusercontent.com/109128770/182590390-9263f7b6-3108-4cce-b0f0-9318ca830375.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/109128770/182590392-1b78b45d-673a-4064-aa4d-94881ecd6af4.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/109128770/182590397-074d4a30-1ab0-44ce-9b12-fbc97d446f46.png)
+![Screenshot (11)](https://user-images.githubusercontent.com/109128770/182590400-8e2df5b3-32a6-47d8-ae31-ac3520581446.png)
+![Screenshot (12)](https://user-images.githubusercontent.com/109128770/182590402-89099e3a-a23b-470f-b137-15d46c7fbd30.png)
 
-
-
-
-
-
-![Screenshot (9)](https://user-images.githubusercontent.com/109128770/179940103-a0981338-5bca-4268-922b-9b48faa2e00e.png)
-
-
-![Screenshot (10)](https://user-images.githubusercontent.com/109128770/179940117-18d578e0-1bb3-47ce-a658-1ee712591fb4.png)
-
-
-
-
-
-
-
-![Screenshot (11)](https://user-images.githubusercontent.com/109128770/179940128-fc2bbc68-520c-4224-9780-c3a33cf0b7e7.png)
-
-
-![Screenshot (12)](https://user-images.githubusercontent.com/109128770/179940147-79921862-cd8f-4e9d-b85d-d8998ce2e492.png)
-
-
-![Screenshot (13)](https://user-images.githubusercontent.com/109128770/179940187-108391a0-9203-4dec-9a90-c384842428fa.png)
-
-![Screenshot (15)](https://user-images.githubusercontent.com/109128770/179940234-37d4bb26-edd0-4c7a-9c82-ed09a82e961b.png)
-
-
-![Screenshot (16)](https://user-images.githubusercontent.com/109128770/179940259-aa61ff4a-c515-4991-b62b-5c7f902b6ca1.png)
-
-
-
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
