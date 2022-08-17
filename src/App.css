@@ -354,7 +354,7 @@ span{
 
 }
 .firsttt{
-  width: 80%;
+  width: 60%;
   padding-top: 11px;
   padding-left: 60px;
   font-size: 1.5rem;
@@ -379,8 +379,8 @@ span{
   margin-left: 800px;
   
 }
-.erp{
-  margin-left: 800px;
+.erpp{
+  margin-left: -100px;
  
 }
 .bter{
@@ -434,4 +434,11 @@ span{
   color: white;
   background-color: #2b2eff;
 
+}
+#imgom{
+  height: 61px;
+  width: 63px;
+}
+.midd{
+  width:13%;
 }

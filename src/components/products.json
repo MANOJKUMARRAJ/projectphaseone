@@ -335,7 +335,7 @@
         },
         {
             "id": 19,
-            "title": "Skin Beauty Serum.",
+            "title": "Skin Beauty Serum",
             "description": "Product name: rorec collagen hyaluronic acid white face serum riceNet weight: 15 m",
             "price": 46,
             "discountPercentage": 10.68,
@@ -401,12 +401,13 @@
             "images": [
                 "https://dummyjson.com/image/i/products/22/1.jpg",
                 "https://dummyjson.com/image/i/products/22/2.jpg",
-                "https://dummyjson.com/image/i/products/22/3.jpg"
+                "https://dummyjson.com/image/i/products/22/3.jpg",
+                "https://dummyjson.com/image/i/products/22/2.jpg"
             ]
         },
         {
             "id": 23,
-            "title": "Orange Essence Food Flavou",
+            "title": "Orange Essence Food Flavour",
             "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
             "price": 14,
             "discountPercentage": 8.04,
@@ -419,8 +420,8 @@
                 "https://dummyjson.com/image/i/products/23/1.jpg",
                 "https://dummyjson.com/image/i/products/23/2.jpg",
                 "https://dummyjson.com/image/i/products/23/3.jpg",
-                "https://dummyjson.com/image/i/products/23/4.jpg",
-                "https://dummyjson.com/image/i/products/23/thumbnail.jpg"
+                "https://dummyjson.com/image/i/products/23/4.jpg"
+           
             ]
         },
         {
@@ -438,8 +439,8 @@
                 "https://dummyjson.com/image/i/products/24/1.jpg",
                 "https://dummyjson.com/image/i/products/24/2.jpg",
                 "https://dummyjson.com/image/i/products/24/3.jpg",
-                "https://dummyjson.com/image/i/products/24/4.jpg",
-                "https://dummyjson.com/image/i/products/24/thumbnail.jpg"
+                "https://dummyjson.com/image/i/products/24/4.jpg"
+               
             ]
         },
         {
@@ -457,8 +458,8 @@
                 "https://dummyjson.com/image/i/products/25/1.png",
                 "https://dummyjson.com/image/i/products/25/2.jpg",
                 "https://dummyjson.com/image/i/products/25/3.png",
-                "https://dummyjson.com/image/i/products/25/4.jpg",
-                "https://dummyjson.com/image/i/products/25/thumbnail.jpg"
+                "https://dummyjson.com/image/i/products/25/4.jpg"
+               
             ]
         },
         {

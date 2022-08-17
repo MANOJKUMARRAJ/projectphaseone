@@ -3,13 +3,13 @@ import '../App.css'
 import './Cart.css'
 import { useNavigate } from 'react-router-dom';
 const Cartdata = ({ cart, total ,removcart}) => {
-    const dat=new Date();
+    // const dat=new Date();
     
 
 
-    const tim=dat.getDay();
-    const seccss=dat.toLocaleString('default', { month: 'short' })
-    const seccc=dat.getFullYear();
+    // const tim=dat.getDay();
+    // const seccss=dat.toLocaleString('default', { month: 'short' })
+    // const seccc=dat.getFullYear();
     // const timm= dat.toLocaleString('en-US', { hour: 'numeric',minute:'numeric', hour12: true })
    
 
@@ -116,7 +116,7 @@ const Cartdata = ({ cart, total ,removcart}) => {
                                     </div>
                                     
                                     <div className='pricess'>
-                                    <div className='countt'>quantity : {product.quantity}&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; Ordered on-&nbsp;{tim}/{seccss}/{seccc}</div>
+                                    <div className='countt'>quantity : {product.quantity}</div>
                                     </div>
                                 </div>
                                 

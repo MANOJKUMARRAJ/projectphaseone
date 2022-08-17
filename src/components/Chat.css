@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.Chat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .wrapper{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: #fdfdfe;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.4);
+  }
+  .wrapper .content .header{
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .content .header .img img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .wrapper .content .header .right{
+    margin-left: 10px;
+  }
+  .wrapper .content .header .right .name{
+    font-weight: 500;
+    font-size: 1.3em;
+  }
+  .wrapper .content .header .right .status{
+    /* font-size: 0.8em; */
+    color: #363062;
+    font-weight: 500;
+  }
+  .wrapper .content .main{
+    margin: 30px 0 0;
+  }
+  .wrapper .content .main .main_content .messages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper .content .main .main_content .messages .bot-message{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #EDECED;
+    font-style: 1.1em;
+    border-radius: 10px;
+    margin: 0 10px 0;
+  }
+  .wrapper .content .main .main_content .messages .human-message{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #363062;
+    color: #EDECED;
+    font-style: 1.1em;
+    border-radius: 10px;
+    /* margin: 0 10px 0; */
+    position: relative;
+    top: 120px;
+    margin-bottom: 20px;
+  }
+  .wrapper .content .bottom{
+    margin: 120px 0 0;
+  }
+  .wrapper .content .bottom .btm{
+    display: flex;
+    align-items: center;
+  }
+  .wrapper .content .bottom .btm .input input{
+    width: 400px;
+    height: 58px;
+    padding-left: 36px;
+    outline: none;
+    border: none;
+    background: #EDECED;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .wrapper .content .bottom .btm .btn{
+    margin-left: 10px;
+  }
+  .wrapper .content .bottom .btm .btn button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #363062;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  .wrapper .content .bottom .btm .btn button i{
+    margin-left: 5px;
+  }
+  #sido{
+    margin-right: 900px;
+  }
+  .name{
+    color: green;
+  }
+  .statusi{
+    color: brown;
+  }
+
+
+  .firstddd{
+  
+    height: 150px;
+  }
+
+  /* .seconddd{
+    
+    height: 700px;
+    margin-top: 26px;
+    margin-left: 22px;
+    display: flex;
+    width: 97%;
+  } */
+  
+  .second{
+    
+    height: 700px;
+    margin-top: 26px;
+    margin-left: 22px;
+    display: flex;
+    width: 97%;
+    justify-content: center;
+  align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  #totle{
+    text-align: center;
+  }
+  .onef1{
+    border: 1px solid black;
+    height: 630px;
+    width: 30%;
+    margin-left: 41px;
+    margin-top: 35px;
+    border-radius: 4%;
+  }
+  .onef2{
+    border: 1px solid black;
+    height: 630px;
+    width: 30%;
+    margin-left: 41px;
+    margin-top: 35px;
+    border-radius: 4%;
+  }
+  .onef3{
+    border: 1px solid black;
+    height: 630px;
+    width: 30%;
+    margin-left: 41px;
+    margin-top: 35px;
+    border-radius: 4%;
+  }
+  .headm{
+    text-align: center;
+    font-size: 60px;
+  }
+  .quotat{
+    text-align: center;
+    font-size: 40px;
+    padding-left: 180px;
+  }
+  .datatext{
+    text-align: center;
+  }
+  .bone1{
+    width: 280px;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    border: 0.5px solid black;
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  .bone2{
+    width: 280px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  .bone3{
+    width: 280px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    border: 0.5px solid black;
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  .gre{
+    color: green;
+    text-align: center;
+    padding-left: 400px;
+  }
+  .aboup{
+    text-align: center;
+    padding-left: 250px;
+  }
+  .cen{
+    text-align: center;
+  }
+  .mathh{
+    text-align: center;
+  }
+  .qued{
+    text-align: center;
+  }
+  .gdiv{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .coddiv{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .erred{
+    color: red;
+  }
+  .erredg{
+    color: green;
+  }

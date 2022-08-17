@@ -81,12 +81,12 @@ function Loginpage({cart}) {
           <input type='email' name='email' placeholder='please enter your email' value={formpageValues.email} onChange={handleChange}/>
           
           </div>
-          <p  className='erp'>{formpageErrors.email}</p>
+          <p  className='erpp'>{formpageErrors.email}</p>
           <div className='onew'>
           <label>Password</label>
           <input type='password' name='password' placeholder='password here' value={formpageValues.password} onChange={handleChange}/>
           </div>
-          <p className='erp' >{formpageErrors.password}</p>
+          <p className='erpp' >{formpageErrors.password}</p>
           <button className='bter'>Login</button>
         
       </form>

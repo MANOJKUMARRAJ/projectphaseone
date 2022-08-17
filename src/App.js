@@ -10,6 +10,12 @@ import Cartdata from './components/Cartdata';
 import Logincart from './components/Logincart';
 import Addresspage from './components/Addresspage';
 import {useNavigate} from 'react-router-dom'
+import Chatwithcust from'./components/Chatwithcust';
+import Offerpage from './components/Offerpage';
+import Mathco from './components/Mathco';
+import Spinco from './components/Spinco';
+import Memoryco from './components/Memoryco';
+// import  Ofer  from './components/ofer';
 
 function App() {
   
@@ -62,6 +68,12 @@ function App() {
       <Routes>
         <Route  path="/" element={<Loginpage cart={cart} />}/>
         <Route  path="/logincart" element={<Logincart  />}/>
+        <Route  path="/chat" element={<Chatwithcust  />}/>
+        <Route  path="/offerpage" element={<Offerpage  />}/>
+        <Route  path="/mathc" element={<Mathco  />}/>
+        {/* <Route  path="/ofr" element={<Ofer  />}/> */}
+        <Route  path="/spinc" element={<Spinco  />}/>
+        <Route  path="/memoryc" element={<Memoryco />}/>
         <Route  path="/addresspage" element={<Addresspage total={total}  cart={cart}  />}/>
         
         <Route  path="/products" element={<Products  onAdd={onAdd} cart={cart} removcart={removcart}/>}/>
